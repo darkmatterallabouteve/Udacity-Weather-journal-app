@@ -91,8 +91,7 @@ const getProjectData = async (url = "", data = {}) => {
       const projectDataList = await response.json();
       console.log(projectDataList);
 
-      //Get the latest item pushed onto the data list
-      let data = projectDataList[projectDataList.length - 1];
+      let data = projectDataList;
       let date = data.date;
       let tempature = data.tempature;
       let feelings = data.feelings;
