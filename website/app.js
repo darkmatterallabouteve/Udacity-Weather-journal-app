@@ -17,7 +17,7 @@ function generateWeatherEntry() {
   let feelings = document.getElementById("feelings").value;
   let zip = document.getElementById("zip").value;
   
-  // Create a new date instance dynamically with JS
+  // Create a new date and format into a string to be stored
   let today = new Date();
   var strDate = 'Y-m-d'
     .replace('Y', today.getFullYear())
